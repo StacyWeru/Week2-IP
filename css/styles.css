@@ -1,0 +1,11 @@
+html{
+    background-image:url(/images/b1d31d413b5883fbb52e4b846b474369.jpg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.card {
+    background-color: blue;
+    text-decoration-color: coral;
+}
