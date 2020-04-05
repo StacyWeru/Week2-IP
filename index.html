@@ -30,26 +30,26 @@
 
                       <p><em>Please fill in this form below to find out your Akan name</em></p>
 
-                      <form id ="detailsInputForm" onsubmit="validate()" >
+                      <form id ="detailsInputForm" onsubmit=" return validate()" >
                           <div class="form-group">
                              <label for="centuryInput">Century you were born in: </label>
-                            <input type="number" class="form-control" id="centuryInput" placeholder="E.g if born in 1895 put 18... ">
+                            <input type="number" class="form-control" id="centuryInput" placeholder="E.g if born in 1895 put 18... " required>
                          </div>
 
                          <div class="form-group">
                              <label for="yearInput">Year you were born in: </label>
-                            <input type="number" class="form-control" id="yearInput" placeholder="E.g if born in 1895 put in 95... ">
+                            <input type="number" class="form-control" id="yearInput" placeholder="E.g if born in 1895 put in 95... " required>
                          </div>
 
                          <div class="form-group">
                              <label for="monthInput">Month you were born in: </label>
                               <input type ="number" class="form-control" id="monthInput"
-                                 placeholder="Please put in you birth Month e.g 03..">
+                                 placeholder="Please put in you birth Month e.g 03.." required>
                          </div>
 
                          <div class="form-group">
                               <label for="dateInput">Date of birth: </label>
-                                 <input type="number" min ="1" max ="31" class="form-control" id="dateInput" placeholder="Please put your Date of birth... ">
+                                 <input type="number" min ="1" max ="31" class="form-control" id="dateInput" placeholder="Please put your Date of birth... " required>
                          </div>
 
                          <div class="form-check-inline">
