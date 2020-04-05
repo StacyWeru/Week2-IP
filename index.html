@@ -23,18 +23,18 @@
                 <div class="card">
                     <div class="card-body">
                 <p><em>Please fill in this form below to find out your Akan name</em></p>
-                <form id ="detailsInputForm">
+                <form id ="detailsInputForm" onsubmit="validate()">
                     <div class="form-group">
-                        <label for="detailsCenturyInput">Century you were born in: </label>
-                           <input type="number" class="form-control" id="detailsCenturyInput" placeholder="Please put in the Century you were born in... ">
+                        <label for="centuryInput">Century you were born in: </label>
+                           <input type="number" class="form-control" id="centuryInput" placeholder="E.g if born in 1895 put 18... ">
                     </div>
                     <div class="form-group">
-                        <label for="detailsYearInput">Year you were born in: </label>
-                           <input type="year" class="form-control" id="detailYearInput" placeholder="Please put your birth year... ">
+                        <label for="yearInput">Year you were born in: </label>
+                           <input type="year" class="form-control" id="yearInput" placeholder="E.g if born in 1895 put in 95... ">
                     </div>
                     <div class="form-group">
-                        <label for="detailsMonthInput">Month you were born in: </label>
-                        <select id="detailsMonthInput" class="form-control">
+                        <label for="monthInput">Month you were born in: </label>
+                        <select id="monthInput" class="form-control">
                             <option value="">Select your Birth Month ...</option>
                             <option value="1"> January</option>
                             <option value="2"> February</option>
@@ -52,28 +52,34 @@
                            
                     </div>
                     <div class="form-group">
-                        <label for="detailsDateInput">Date of birth: </label>
-                           <input type="number" min ="1" max ="31" class="form-control" id="detailsDateInput" placeholder="Please put your Date of birth... ">
+                        <label for="dateInput">Date of birth: </label>
+                           <input type="number" min ="1" max ="31" class="form-control" id="dateInput" placeholder="Please put your Date of birth... ">
                     </div>
                     <div class="form-check-inline">
-                        <label for="detailsGenderInput">
+                        <label for="genderInput">
                             <input type="radio" class="form-check-input" name="Gender" id="maleId" value="male" required> Male
                         </label>
                     </div>
                         <div class="form-check-inline">
-                            <label for="detailsGenderInput">
+                            <label for="genderInput">
                                 <input type="radio" class="form-check-input" name="Gender" id="femaleId" value="female" required> Female
                             </label>
                             <br/>
                             <br/>
                             </div>
+                            <div>
                             <a href="#enter-details">
                                 <button type="button" class="btn btn-primary" onClick="onsubmit()"> Submit </button>
                             </a>
+                            <a href="#clear-form">
+                            <button type="button" class="btn btn-danger float-right"   onClick="clearForm()"> Clear </button>
+                            </a>
+                            </div>
 
                     </div>
 
                 </form>
+                <p id="output"> </p>
                 </div>
                 </div>
 
