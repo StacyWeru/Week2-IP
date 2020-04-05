@@ -15,7 +15,7 @@ function validate();{
         alert("Please fill in the blanks appropriately");
         return false;
     } else {
-
+        true;
     }
 }
     function calculate(){
@@ -28,6 +28,21 @@ function validate();{
         return (Math.floor(day));
       }
     }
-    
+
+    function genderInput(){
+        gender = document.getElementsByName("gender");
+
+        if(gender[0].checked == true){
+            var gender ="maleAkan";
+        }
+        else if (gender[1].checked == true){
+            var gender =" femaleAkan";
+        }
+        else {
+            console.log("Invalid Entry")
+        }
+
+        
+    }
 
      
