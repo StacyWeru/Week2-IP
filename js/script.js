@@ -44,5 +44,58 @@ function validate();{
 
         
     }
+    switch(gender){
+        case "maleAkan":
+            if (day == 1){
+                alert("Hey boy, You were born on a" + daysOfTheWeek[0] +" ,therefore your Akan name is " + maleAkan[0] + "! :)");
+            } else if (day == 2){
+                alert("Hey boy, You were born on a" + daysOfTheWeek[1] +" ,therefore your Akan name is " + maleAkan[1] + "! :)");
+            } else if (day == 3){
+                alert("Hey boy, You were born on a" + daysOfTheWeek[2] +" ,therefore your Akan name is " + maleAkan[2] + "! :)");
+            } else if (day == 4){
+                alert("Hey boy, You were born on a" + daysOfTheWeek[3] +" ,therefore your Akan name is " + maleAkan[3] + "! :)");
+            } else if (day == 5){
+                alert("Hey boy, You were born on a" + daysOfTheWeek[4] +" ,therefore your Akan name is " + maleAkan[4] + "! :)");
+            } else if (day == 6){
+                alert("Hey boy, You were born on a" + daysOfTheWeek[5] +" ,therefore your Akan name is " + maleAkan[5] + "! :)");
+            } else if (day == -0) {
+                alert("Hey boy, You were born on a" + daysOfTheWeek[6] +" ,therefore your Akan name is " + maleAkan[6] + "! :)");
+            } else {
+                console.log("Invalid Entry!");
+            } 
+
+            break;
+            case"femaleAkan":
+            if (day == 1){
+                alert("Hey girl, You were born on a" + daysOfTheWeek[0] +" ,therefore your Akan name is " + femalAkan[0] + "! :)");
+            } else if (day == 2){
+                alert("Hey girl, You were born on a" + daysOfTheWeek[1] +" ,therefore your Akan name is " + femaleAkan[1] + "! :)");
+            } else if (day == 3){
+                alert("Hey girl, You were born on a" + daysOfTheWeek[2] +" ,therefore your Akan name is " + femaleAkan[2] + "! :)");
+            } else if (day == 4){
+                alert("Hey girl, You were born on a" + daysOfTheWeek[3] +" ,therefore your Akan name is " + femaleAkan[3] + "! :)");
+            } else if (day == 5){
+                alert("Hey girl, You were born on a" + daysOfTheWeek[4] +" ,therefore your Akan name is " + femaleAkan[4] + "! :)");
+            } else if (day == 6){
+                alert("Hey girl, You were born on a" + daysOfTheWeek[5] +" ,therefore your Akan name is " + femaleAkan[5] + "! :)");
+            } else if (day == -0) {
+                alert("Hey girl, You were born on a" + daysOfTheWeek[6] +" ,therefore your Akan name is " + femaleAkan[6] + "! :)");
+            } else{
+                console.log("Invalid Entry!");
+            }
+
+            break ;
+            default:
+
+        }
+
+        function output(){
+            day = calculate();
+            calculate();
+            genderInput();
+        }
+         function clearForm(){
+             document.getElementById("detailsInputForm").reset();
+         }
 
      
