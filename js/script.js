@@ -15,7 +15,7 @@ function validate();{
         alert("Please fill in the blanks appropriately");
         return false;
     } else {
-        true;
+         return true;
     }
 }
     function calculate(){
@@ -27,7 +27,7 @@ function validate();{
         console.log(day);
         return (Math.floor(day));
       }
-    }
+    
 
     function genderInput(){
         gender = document.getElementsByName("gender");
